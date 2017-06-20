@@ -1,1 +1,3 @@
-<meta charset = "UTF-8">
+<html>
+  <meta charset = "UTF-8">
+</html>
