@@ -199,7 +199,7 @@
 			tNode ('CSN', 860, 20, 200, 100, 'fill:#d9d9d9');
 			var pCSN = document.getElementById ('CSN').getBoundingClientRect ();
 			nTag ('', pCSN.left, pCSN.top + 25, 'CALL<br>STATIONS', 'ntg');
-			nTag ('', pCSN.left + 100, pCSN.top + 25, 'EXTENTIONS', 'ntg');
+			nTag ('', pCSN.left + 100, pCSN.top + 25, 'EXTENSIONS', 'ntg');
 	// SOURCE VOLTAGE
 			tNode ('SV', 20, 140, 100, 100, 'fill:#31859b');
 			var pSV = document.getElementById ('SV').getBoundingClientRect ();
