@@ -1,5 +1,5 @@
 <html>
-  <meta charset = "UTF-8">
+	<meta charset = "UTF-8">
 	<style>
 		/*Button Tag Enabled*/
 		p.btge {
@@ -59,7 +59,6 @@
             user-select: none;
 		}
 	</style>
-  <body>
-  Hello World!
-  </body>
+	<body style='margin:0; padding:0' onload='init ()'>
+	</body>
 </html>
