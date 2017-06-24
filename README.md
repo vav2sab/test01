@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<meta charset = "UTF-8">
 	<style>
@@ -50,8 +51,8 @@
 			vertical-align: middle;
 			text-align: center;
 			color: #d9d9d9;
-            -webkit-user-select: auto !important;
-            user-select: auto !important;
+            -webkit-user-select: text;
+            user-select: text;
 		}
         p.arL {
             
