@@ -835,7 +835,7 @@
                 prmAct [0] [0] ++;
                 var n = prmAct [0] [0];
     // WALL SOCKET n
-                tNode ('WS'.concat (n), 620, 240 * n - 120, 100, 100, 'fill:#7f7f7f');
+                tNode ('WS'.concat (n), 620, 160 * n - 40, 100, 100, 'fill:#7f7f7f');
                 var pWSn = document.getElementById ('WS'.concat (n) ).getBoundingClientRect ();
                 nTag ('ws'.concat (n), pWSn.left + window.pageXOffset, pWSn.top + window.pageYOffset + 25, 'WS'.concat (n), 'ntg', 'color:#d9d9d9');
 	// PATCH CABLE n
@@ -846,14 +846,14 @@
                 prmAct [7] [n] = 3;
                 vTag (7, n, pPCn.left + window.pageXOffset + 70, pPCn.top + window.pageYOffset, 0, String (prmAct [7] [n].toFixed (1) ).concat (' &Omega;'), false, false, 'vtg', 70);
     // CALL STATION n
-                tNode ('CS'.concat (n), 860, 240 * n - 120, 200, 100, 'fill:#7f7f7f');
+                tNode ('CS'.concat (n), 860, 160 * n - 40, 200, 100, 'fill:#7f7f7f');
                 var pCSn = document.getElementById ('CS'.concat (n) ).getBoundingClientRect ();
                 nTag ('cs'.concat (n), pCSn.left + window.pageXOffset, pWSn.top + window.pageYOffset + 25, 'CS'.concat (n), 'ntg', 'color:#d9d9d9');
                 vTag (0, (n), pCSn.left + window.pageXOffset + 100, pCSn.top + window.pageYOffset, 0, 'E&times;'.concat (prmAct [0] [n] ), false, false, 'vtg', 100);
                 bTag ('cs-'.concat (n), pCSn.left + window.pageXOffset + 100, pCSn.top + window.pageYOffset + 50, 50, '-', 'btge', 'subExt (this)');
                 bTag ('cs+'.concat (n), pCSn.left + window.pageXOffset + 150, pCSn.top + window.pageYOffset + 50, 50, '+', 'btge', 'addExt (this)');
     // EFFECTIVE VOLTAGE n
-                tNode ('EV'.concat (n), 1080, 240 * n - 120, 100, 100, 'fill:#31859b');
+                tNode ('EV'.concat (n), 1080, 160 * n - 40, 100, 100, 'fill:#31859b');
                 var pEVn = document.getElementById ('EV'.concat (n) ).getBoundingClientRect ();
                 vTag (8, n, pEVn.left + window.pageXOffset, pEVn.top + window.pageYOffset + 25, 0, String (prmAct [8] [n].toFixed (1) ).concat (' V'), false, false, 'vtg', 100);
             }
