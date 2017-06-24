@@ -632,7 +632,7 @@
             tNode ('BCN', 260, 20, 100, 100, 'fill:#933a32');
 			var pBCN = document.getElementById ('BCN').getBoundingClientRect ();
 			nTag ('', pBCN.left + window.pageXOffset, pBCN.top + window.pageYOffset, 'BUS<br>CABLES', 'ntg', 'color:#d9d9d9');
-			vTag (3, 0, pBCN.left + window.pageXOffset, pBCN.top + window.pageYOffset + 50, 0, String (prmAct [3] [0] ).concat (' &Omega;/km'), true, false, 'vtg', 100, 'toNum (this)', 'toStr (this, " &Omega;/km")', 'idBlur (event, this)');
+			vTag (3, 0, pBCN.left + window.pageXOffset, pBCN.top + window.pageYOffset + 50, String (prmAct [3] [0] ).concat (' &Omega;/km'), true, false, 'vtg', 100, 'toNum (this)', 'toStr (this, " &Omega;/km")', 'idBlur (event, this)');
 	// JUNCTION BOXES NODE
 			tNode ('JBN', 380, 20, 100, 100, 'fill:#d9d9d9');
 			var pJBN = document.getElementById ('JBN').getBoundingClientRect ();
@@ -641,7 +641,7 @@
 			tNode ('ACN', 500, 20, 100, 100, 'fill:#7f659f');
 			var pACN = document.getElementById ('ACN').getBoundingClientRect ();
 			nTag ('', pACN.left + window.pageXOffset, pACN.top + window.pageYOffset, 'ACCESS<br>CABLES', 'ntg', 'color:#d9d9d9');
-			vTag (5, 0, pACN.left + window.pageXOffset, pACN.top + window.pageYOffset + 50, 0, String (prmAct [5] [0] ).concat (' &Omega;/km'), true, false, 'vtg', 100, 'toNum (this)', 'toStr (this, " &Omega;/km")', 'idBlur (event, this)');
+			vTag (5, 0, pACN.left + window.pageXOffset, pACN.top + window.pageYOffset + 50, String (prmAct [5] [0] ).concat (' &Omega;/km'), true, false, 'vtg', 100, 'toNum (this)', 'toStr (this, " &Omega;/km")', 'idBlur (event, this)');
 	// WALL SOCKETS NODE
 			tNode ('WSN', 620, 20, 100, 100, 'fill:#d9d9d9');
 			var pWSN = document.getElementById ('WSN').getBoundingClientRect ();
@@ -650,7 +650,7 @@
 			tNode ('PCN', 740, 20, 100, 100, 'fill:#799540');
 			var pPCN = document.getElementById ('PCN').getBoundingClientRect ();
 			nTag ('', pPCN.left + window.pageXOffset, pPCN.top + window.pageYOffset, 'PATCH<br>CABLES', 'ntg', 'color:#d9d9d9');
-			vTag (7, 0, pPCN.left + window.pageXOffset, pPCN.top + window.pageYOffset + 50, 0, String (prmAct [7] [0] ).concat (' &Omega;/km'), true, false, 'vtg', 100, 'toNum (this)', 'toStr (this, " &Omega;/km")', 'idBlur (event, this)');
+			vTag (7, 0, pPCN.left + window.pageXOffset, pPCN.top + window.pageYOffset + 50, String (prmAct [7] [0] ).concat (' &Omega;/km'), true, false, 'vtg', 100, 'toNum (this)', 'toStr (this, " &Omega;/km")', 'idBlur (event, this)');
 	// CALL STATIONS NODE
 			tNode ('CSN', 860, 20, 200, 100, 'fill:#d9d9d9');
 			var pCSN = document.getElementById ('CSN').getBoundingClientRect ();
@@ -659,7 +659,7 @@
 	// SOURCE VOLTAGE
 			tNode ('SV', 20, 140, 100, 100, 'fill:#31859b');
 			var pSV = document.getElementById ('SV').getBoundingClientRect ();
-			vTag (8, 0, pSV.left + window.pageXOffset, pSV.top + window.pageYOffset, 0, String (prmAct [8] [0] ).concat (' V'), false, false, 'vtg', 100);
+			vTag (8, 0, pSV.left + window.pageXOffset, pSV.top + window.pageYOffset, String (prmAct [8] [0] ).concat (' V'), false, false, 'vtg', 100);
 			bTag ('SVt', pSV.left + window.pageXOffset, pSV.top + window.pageYOffset + 50, 100, '21.6&#8651;24 V', 'btge', 'svpSrc ()');
 	// RACK
 			tNode ('R', 140, 140, 100, 100, 'fill:#7f7f7f');
@@ -668,8 +668,8 @@
 	// BUS CABLE 1
 			tLink ('BC1', 240, 165, 140, 50, 'fill:#933a32');
 			var pBC1 = document.getElementById ('BC1').getBoundingClientRect ();
-			vTag (2, 1, pBC1.left + window.pageXOffset, pBC1.top + window.pageYOffset, 0, String (prmAct [2] [1] ).concat (' m'), true, false, 'vtg', 70, 'toNum (this)', 'toStr (this, " m")', 'idBlur (event, this)');
-			vTag (3, 1, pBC1.left + window.pageXOffset + 70, pBC1.top + window.pageYOffset, 0, String (prmAct [3] [1].toFixed (1) ).concat (' &Omega;'), false, false, 'vtg', 70);
+			vTag (2, 1, pBC1.left + window.pageXOffset, pBC1.top + window.pageYOffset, String (prmAct [2] [1] ).concat (' m'), true, false, 'vtg', 70, 'toNum (this)', 'toStr (this, " m")', 'idBlur (event, this)');
+			vTag (3, 1, pBC1.left + window.pageXOffset + 70, pBC1.top + window.pageYOffset, String (prmAct [3] [1].toFixed (1) ).concat (' &Omega;'), false, false, 'vtg', 70);
 	// JUNCTION BOX 1
 			tNode ('JB1', 380, 140, 100, 100, 'fill:#7f7f7f');
 			var pJB1 = document.getElementById ('JB1').getBoundingClientRect ();
@@ -679,8 +679,8 @@
 	// ACCESS CABLE 1
 			tLink ('AC1', pJB1.left + window.pageXOffset + pJB1.width, 165, 140, 50, 'fill:#7f659f');
 			var pAC1 = document.getElementById ('AC1').getBoundingClientRect ();
-			vTag (4, 1, pAC1.left + window.pageXOffset, pAC1.top + window.pageYOffset, 0, String (prmAct [4] [1] ).concat (' m'), true, false, 'vtg', 70, 'toNum (this)', 'toStr (this, " m")', 'idBlur (event, this)');
-			vTag (5, 1, pAC1.left + window.pageXOffset + 70, pAC1.top + window.pageYOffset, 0, String (prmAct [5] [1].toFixed (1) ).concat (' &Omega;'), false, false, 'vtg', 70);
+			vTag (4, 1, pAC1.left + window.pageXOffset, pAC1.top + window.pageYOffset, String (prmAct [4] [1] ).concat (' m'), true, false, 'vtg', 70, 'toNum (this)', 'toStr (this, " m")', 'idBlur (event, this)');
+			vTag (5, 1, pAC1.left + window.pageXOffset + 70, pAC1.top + window.pageYOffset, String (prmAct [5] [1].toFixed (1) ).concat (' &Omega;'), false, false, 'vtg', 70);
 	// WALL SOCKET 1
 			tNode ('WS1', 620, 140, 100, 100, 'fill:#7f7f7f');
 			var pWS1 = document.getElementById ('WS1').getBoundingClientRect ();
@@ -688,13 +688,13 @@
 	// PATCH CABLE 1
 			tLink ('PC1', pWS1.left + window.pageXOffset + pWS1.width, 165, 140, 50, 'fill:#799540');
 			var pPC1 = document.getElementById ('PC1').getBoundingClientRect ();
-			vTag (6, 1, pPC1.left + window.pageXOffset, pPC1.top + window.pageYOffset, 0, String (prmAct [6] [1] ).concat (' m'), true, false, 'vtg', 70, 'toNum (this)', 'toStr (this, " m")', 'idBlur (event, this)');
-			vTag (7, 1, pPC1.left + window.pageXOffset + 70, pPC1.top + window.pageYOffset, 0, String (prmAct [7] [1].toFixed (1) ).concat (' &Omega;'), false, false, 'vtg', 70);
+			vTag (6, 1, pPC1.left + window.pageXOffset, pPC1.top + window.pageYOffset, String (prmAct [6] [1] ).concat (' m'), true, false, 'vtg', 70, 'toNum (this)', 'toStr (this, " m")', 'idBlur (event, this)');
+			vTag (7, 1, pPC1.left + window.pageXOffset + 70, pPC1.top + window.pageYOffset, String (prmAct [7] [1].toFixed (1) ).concat (' &Omega;'), false, false, 'vtg', 70);
 	// CALL STATION 1
 			tNode ('CS1', 860, 140, 200, 100, 'fill:#7f7f7f');
 			var pCS1 = document.getElementById ('CS1').getBoundingClientRect ();
 			nTag ('cs1', pCS1.left + window.pageXOffset, pCS1.top + window.pageYOffset, 'CS1', 'ntg', 'color:#d9d9d9');
-            vTag (0, 1, pCS1.left + window.pageXOffset + 100, pCS1.top + window.pageYOffset, 0, 'E&times;'.concat (prmAct [0] [1] ), false, false, 'vtg', 100);
+            vTag (0, 1, pCS1.left + window.pageXOffset + 100, pCS1.top + window.pageYOffset, 'E&times;'.concat (prmAct [0] [1] ), false, false, 'vtg', 100);
             bTag ('CS-1', pCS1.left + window.pageXOffset, pCS1.top + window.pageYOffset + 50, 50, '-', 'btge', 'subCST ()');
 			bTag ('CS+1', pCS1.left + window.pageXOffset + 50, pCS1.top + window.pageYOffset + 50, 50, '+', 'btge', 'addCST ()');
 			bTag ('cs-1', pCS1.left + window.pageXOffset + 100, pCS1.top + window.pageYOffset + 50, 50, '-', 'btge', 'subExt (this)');
@@ -702,7 +702,7 @@
 	// EFFECTIVE VOLTAGE 1
 			tNode ('EV1', 1080, 140, 100, 100, 'fill:#31859b');
 			var pEV1 = document.getElementById ('EV1').getBoundingClientRect ();
-			vTag (8, 1, pEV1.left + window.pageXOffset, pEV1.top + window.pageYOffset + 25, 0, String (prmAct [8] [1].toFixed (1) ).concat (' V'), false, false, 'vtg', 100);
+			vTag (8, 1, pEV1.left + window.pageXOffset, pEV1.top + window.pageYOffset + 25, String (prmAct [8] [1].toFixed (1) ).concat (' V'), false, false, 'vtg', 100);
 		}
         
 		function updt (cfg) {
@@ -740,9 +740,8 @@
 			svgCanvas.appendChild (svgFoObj);
 		}
         
-		function vTag (a, b, x, y, rotate, text, editable, spellcheck, clss, width, onfocus, onblur, onkeypress) {
+		function vTag (a, b, x, y, /*rotate, */text, editable, spellcheck, clss, width, onfocus, onblur, onkeypress) {
 			var svgFoObj = document.createElementNS (xmlns, 'foreignObject');
-            svgFoObj.setAttributeNS (null, 'style', '-moz-transform: rotate('.concat (rotate).concat ('deg)') );
 			svgFoObj.setAttributeNS (null, 'height', 50);
 			svgFoObj.setAttributeNS (null, 'width', width);
 			svgFoObj.setAttributeNS (null, 'y', y);
@@ -836,20 +835,20 @@
                 tLink ('PC'.concat (n), pWSn.left + window.pageXOffset + pWSn.width, pWSn.top + window.pageYOffset + 25, 140, 50, 'fill:#799540');
                 var pPCn = document.getElementById ('PC'.concat (n) ).getBoundingClientRect ();
                 prmAct [6] [n] = 10;
-                vTag (6, n, pPCn.left + window.pageXOffset, pPCn.top + window.pageYOffset, 0, String (prmAct [6] [n] ).concat (' m'), true, false, 'vtg', 70, 'toNum (this)', 'toStr (this, " m")', 'idBlur (event, this)');
+                vTag (6, n, pPCn.left + window.pageXOffset, pPCn.top + window.pageYOffset, String (prmAct [6] [n] ).concat (' m'), true, false, 'vtg', 70, 'toNum (this)', 'toStr (this, " m")', 'idBlur (event, this)');
                 prmAct [7] [n] = 3;
-                vTag (7, n, pPCn.left + window.pageXOffset + 70, pPCn.top + window.pageYOffset, 0, String (prmAct [7] [n].toFixed (1) ).concat (' &Omega;'), false, false, 'vtg', 70);
+                vTag (7, n, pPCn.left + window.pageXOffset + 70, pPCn.top + window.pageYOffset, String (prmAct [7] [n].toFixed (1) ).concat (' &Omega;'), false, false, 'vtg', 70);
     // CALL STATION n
                 tNode ('CS'.concat (n), 860, 160 * n - 40, 200, 100, 'fill:#7f7f7f');
                 var pCSn = document.getElementById ('CS'.concat (n) ).getBoundingClientRect ();
                 nTag ('cs'.concat (n), pCSn.left + window.pageXOffset, pWSn.top + window.pageYOffset + 25, 'CS'.concat (n), 'ntg', 'color:#d9d9d9');
-                vTag (0, (n), pCSn.left + window.pageXOffset + 100, pCSn.top + window.pageYOffset, 0, 'E&times;'.concat (prmAct [0] [n] ), false, false, 'vtg', 100);
+                vTag (0, (n), pCSn.left + window.pageXOffset + 100, pCSn.top + window.pageYOffset, 'E&times;'.concat (prmAct [0] [n] ), false, false, 'vtg', 100);
                 bTag ('cs-'.concat (n), pCSn.left + window.pageXOffset + 100, pCSn.top + window.pageYOffset + 50, 50, '-', 'btge', 'subExt (this)');
                 bTag ('cs+'.concat (n), pCSn.left + window.pageXOffset + 150, pCSn.top + window.pageYOffset + 50, 50, '+', 'btge', 'addExt (this)');
     // EFFECTIVE VOLTAGE n
                 tNode ('EV'.concat (n), 1080, 160 * n - 40, 100, 100, 'fill:#31859b');
                 var pEVn = document.getElementById ('EV'.concat (n) ).getBoundingClientRect ();
-                vTag (8, n, pEVn.left + window.pageXOffset, pEVn.top + window.pageYOffset + 25, 0, String (prmAct [8] [n].toFixed (1) ).concat (' V'), false, false, 'vtg', 100);
+                vTag (8, n, pEVn.left + window.pageXOffset, pEVn.top + window.pageYOffset + 25, String (prmAct [8] [n].toFixed (1) ).concat (' V'), false, false, 'vtg', 100);
             }
         }
         
@@ -918,7 +917,8 @@
 		}
         
 		function selectText (id) {
-            var range = document.createRange ();
+            document.execCommand ('selectAll', false, null);
+/*            var range = document.createRange ();
             range.selectNodeContents (id);
             var sel = window.getSelection ();
             sel.removeAllRanges ();
