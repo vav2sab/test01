@@ -887,7 +887,7 @@
         
 		function toNum (id) {
 			id.innerHTML = id.innerHTML.replace (/\D+[^\.]*/g, '');
-			window.setTimeout (function () {document.execCommand ('selectAll', false, null)}, 100);
+			window.setTimeout (function () {document.execCommand ('selectAll', false, null)}, 5000);
 		}
         
 		function toStr (id, format) {
