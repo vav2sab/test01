@@ -887,7 +887,7 @@
         
 		function toNum (id) {
 			id.innerHTML = id.innerHTML.replace (/\D+[^\.]*/g, '');
-			document.execCommand ('selectAll', false, id);
+			window.setTimeout (selectText (), 1);
 		}
         
 		function toStr (id, format) {
@@ -914,6 +914,25 @@
                 document.getElementById (String (a).concat (b) ).innerHTML = prmAct [a] [b].toFixed (1).concat (' &Omega;');
                 document.getElementById (String (8).concat (b) ).innerHTML = prmAct [8] [b].toFixed (1).concat (' V');
             }
+		}
+        
+		function selectText () {
+            document.execCommand ('selectAll', false, null);
+/*            var range = document.createRange ();
+            range.selectNodeContents (id);
+            var sel = window.getSelection ();
+            sel.removeAllRanges ();
+            sel.addRange (range);
+/*			if (document.selection) {
+				var range = document.body.createTextRange ();
+				range.moveToElementText (id);
+				range.select ();
+			} else if (window.getSelection) {
+				var range = document.createRange ();
+				range.selectNodeContents (id);
+				window.getSelection ().removeAllRanges ();
+				window.getSelection ().addRange (range);
+			}*/
 		}
         
 		function svpSrc () {
