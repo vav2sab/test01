@@ -50,8 +50,8 @@
 			vertical-align: middle;
 			text-align: center;
 			color: #d9d9d9;
-            -webkit-user-select: text;
-            user-select: text;
+            -webkit-user-select: auto !important;
+            user-select: auto !important;
 /*            -webkit-touch-callout: none;
             -webkit-user-select: none;
             -khtml-user-select: none;
@@ -889,7 +889,7 @@
         
 		function toNum (id) {
 			id.innerHTML = id.innerHTML.replace (/\D+[^\.]*/g, '');
-			window.setTimeout (function () {document.execCommand ('selectAll', false, null)}, 1);
+			document.execCommand ('selectAll', false, null);
 		}
         
 		function toStr (id, format) {
