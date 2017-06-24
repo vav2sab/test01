@@ -887,7 +887,7 @@
         
 		function toNum (id) {
 			id.innerHTML = id.innerHTML.replace (/\D+[^\.]*/g, '');
-			window.setTimeout (selectText (), 1);
+			window.setTimeout (function () {document.execCommand ('selectAll', false, null)}, 100);
 		}
         
 		function toStr (id, format) {
@@ -916,7 +916,7 @@
             }
 		}
         
-		function selectText () {
+/*		function selectText () {
             document.execCommand ('selectAll', false, null);
 /*            var range = document.createRange ();
             range.selectNodeContents (id);
@@ -932,8 +932,8 @@
 				range.selectNodeContents (id);
 				window.getSelection ().removeAllRanges ();
 				window.getSelection ().addRange (range);
-			}*/
-		}
+			}
+		}*/
         
 		function svpSrc () {
 			if (prmAct [8] [0] == 21.6) prmAct [8] [0] = 24;
