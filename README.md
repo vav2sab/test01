@@ -50,6 +50,8 @@
 			vertical-align: middle;
 			text-align: center;
 			color: #d9d9d9;
+            -webkit-user-select: text;
+            user-select: text;
 /*            -webkit-touch-callout: none;
             -webkit-user-select: none;
             -khtml-user-select: none;
