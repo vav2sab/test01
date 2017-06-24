@@ -53,6 +53,13 @@
 			color: #d9d9d9;
             -webkit-user-select: text;
             user-select: text;
+/*            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;*/
 		}
         p.arL {
             
@@ -883,7 +890,7 @@
         
 		function toNum (id) {
 			id.innerHTML = id.innerHTML.replace (/\D+[^\.]*/g, '');
-			document.execCommand ('selectAll', false, null);
+			window.setTimeout (function () {document.execCommand ('selectAll', false, null)}, 1);
 		}
         
 		function toStr (id, format) {
