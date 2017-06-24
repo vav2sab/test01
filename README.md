@@ -50,13 +50,13 @@
 			vertical-align: middle;
 			text-align: center;
 			color: #d9d9d9;
-            -webkit-touch-callout: none;
+/*            -webkit-touch-callout: none;
             -webkit-user-select: none;
             -khtml-user-select: none;
             -moz-user-select: none;
             -ms-user-select: none;
             -o-user-select: none;
-            user-select: none;
+            user-select: none;*/
 		}
         p.arL {
             
