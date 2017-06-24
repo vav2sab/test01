@@ -887,7 +887,7 @@
         
 		function toNum (id) {
 			id.innerHTML = id.innerHTML.replace (/\D+[^\.]*/g, '');
-			selectText (id);
+			selectText ();
 		}
         
 		function toStr (id, format) {
@@ -916,7 +916,7 @@
             }
 		}
         
-		function selectText (id) {
+		function selectText () {
             document.execCommand ('selectAll', false, null);
 /*            var range = document.createRange ();
             range.selectNodeContents (id);
