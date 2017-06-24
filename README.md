@@ -670,10 +670,6 @@
 			var pBC1 = document.getElementById ('BC1').getBoundingClientRect ();
 			vTag (2, 1, pBC1.left + window.pageXOffset, pBC1.top + window.pageYOffset, 0, String (prmAct [2] [1] ).concat (' m'), true, false, 'vtg', 70, 'toNum (this)', 'toStr (this, " m")', 'idBlur (event, this)');
 			vTag (3, 1, pBC1.left + window.pageXOffset + 70, pBC1.top + window.pageYOffset, 0, String (prmAct [3] [1].toFixed (1) ).concat (' &Omega;'), false, false, 'vtg', 70);
-            /*tLink ('BC1', 405, 240, 50, 140, 'fill:#933a32');
-            var pBC1 = document.getElementById ('BC1').getBoundingClientRect ();
-            vTag (2, 0, -380, 405, -90, String (prmAct [2] [1] ).concat (' m'), true, false, 'vtg', 70, 'toNum (this)', 'toStr (this, " m")', 'idBlur (event, this)');
-            vTag (3, 0, -310, 405, -90, String (prmAct [3] [1].toFixed (1) ).concat (' &Omega;'), false, false, 'vtg', 70);*/
 	// JUNCTION BOX 1
 			tNode ('JB1', 380, 140, 100, 100, 'fill:#7f7f7f');
 			var pJB1 = document.getElementById ('JB1').getBoundingClientRect ();
@@ -689,8 +685,6 @@
 			tNode ('WS1', 620, 140, 100, 100, 'fill:#7f7f7f');
 			var pWS1 = document.getElementById ('WS1').getBoundingClientRect ();
 			nTag ('ws1', pWS1.left + window.pageXOffset, pWS1.top + window.pageYOffset + 25, 'WS1', 'ntg', 'color:#d9d9d9');
-//			bTag (pWS1.left, pWS1.top + 50, 50, '-', 'btge');
-//			bTag (pWS1.left + 50, pWS1.top + 50, 50, '+', 'btge');
 	// PATCH CABLE 1
 			tLink ('PC1', pWS1.left + window.pageXOffset + pWS1.width, 165, 140, 50, 'fill:#799540');
 			var pPC1 = document.getElementById ('PC1').getBoundingClientRect ();
@@ -924,7 +918,12 @@
 		}
         
 		function selectText (id) {
-			if (document.selection) {
+            var range = document.createRange ();
+            range.selectNodeContents (id);
+            var sel = window.getSelection ();
+            sel.removeAllRanges ();
+            sel.addRange (range);
+/*			if (document.selection) {
 				var range = document.body.createTextRange ();
 				range.moveToElementText (id);
 				range.select ();
@@ -933,7 +932,7 @@
 				range.selectNodeContents (id);
 				window.getSelection ().removeAllRanges ();
 				window.getSelection ().addRange (range);
-			}
+			}*/
 		}
         
 		function svpSrc () {
