@@ -752,9 +752,8 @@
 			svgP.setAttributeNS (null, 'onfocus', onfocus);
 			svgP.setAttributeNS (null, 'onblur', onblur);
 			svgP.setAttributeNS (null, 'onkeypress', onkeypress);
-			svgP.setAttributeNS (null, 'style', 'width: '.concat (width).concat ('px; user-select: ').concat (select) );
+			svgP.setAttributeNS (null, 'style', 'width: '.concat (width).concat ('px; -webkit-user-select: ').concat (select) );
 			svgP.setAttributeNS (null, 'id', String (a).concat (String (b) ) );
-//			svgP.setAttributeNS (null, 'styleuser-select', select);
 			svgP.innerHTML = text;
 			svgFoObj.appendChild (svgP);
 			svgCanvas.appendChild (svgFoObj);
